@@ -1,0 +1,142 @@
+/* Write your desired css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: linear-gradient(to right, rgb(57, 203, 232), rgb(14, 17, 158));
+}
+
+body h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 3.4rem;
+    margin-top: 50px;
+}
+
+#weather-container {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px rgb(24, 23, 23);
+    width:50%;
+    margin: 50px auto 50px auto;
+    border-radius: 20px;
+
+
+}
+@media screen and (max-width:800px){
+    #weather-container{
+        width:80%;
+    }
+}
+@media screen and (max-width:550px){
+    #weather-container{
+        width:95%;
+    }
+}
+
+#location-input {
+    width:400px;
+    padding:15px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+#submit {
+    width:200px;
+    border-radius: 10px;
+    background-color: rgb(234, 11, 11);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 15px;
+    font-weight: bold;
+    border:none;
+
+}
+#submit:hover{
+    background-color:rgb(194, 127, 127);
+}
+#location-form {
+    text-align: center;
+    padding:20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#wheather-data{
+    width:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap:40px;
+}
+.city{
+    font-size:30px;
+   text-transform: capitalize;
+   color:white;
+   font-weight: bold;
+
+}
+.temprature{
+    font-size:20px;
+    text-transform: capitalize;
+    color:rgb(213, 211, 211);
+    font-weight: bolder;
+    
+}
+.main{
+    font-size:25px;
+    text-transform: capitalize;
+    color:white;
+}
+.description{
+    font-size:20px;
+    text-transform: capitalize;
+    margin-bottom:30px;
+    color:white;
+}
+.temp-container{
+    
+ display:flex;
+ justify-content:space-around;
+ width:100%;
+ text-align: center;
+ align-items: center;
+}
+.mistake{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:red;
+    text-transform: capitalize;
+}
+.active{
+    animation: animate 0.1s;
+}
+@keyframes animate {
+    0%{
+        transform:rotate(10deg);
+        box-shadow: 2px 2px 20px rgb(255, 5, 5);
+    }
+    50%{
+        transform:translate(-10px);
+        box-shadow: 2px 2px 20px rgb(255, 5, 5);
+    }
+    100%{
+     transform: rotate(0deg);
+    }
+}
