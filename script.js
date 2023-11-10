@@ -37,11 +37,10 @@ async function getWeather(e) {
 
   catch (error) {
     mistake.innerHTML = 'city not found';
-    const temprature = ''
-    temprature.innerHTML = ''
-    Searchcity.innerHTML = ''
-    main.innerHTML = ''
-    describe.innerHTML = ''
+    temprature.innerHTML = '';
+    Searchcity.innerHTML = '';
+    main.innerHTML = '';
+    describe.innerHTML = '';
     weatherContainer.classList.add('active');
     inputsearch.value = '';
   }
